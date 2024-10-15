@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="alarm_size">28sp</dimen>
+    <dimen name="margin">50dp</dimen>
+    <dimen name="timer_size">40sp</dimen>
+    <dimen name="timer_margin">40dp</dimen>
+</resources>
