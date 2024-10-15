@@ -1,6 +1,8 @@
 package ru.zatsoft.alarmclock
 
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import ru.zatsoft.alarmclock.databinding.ActivityAlarmBinding
@@ -23,5 +25,16 @@ class AlarmActivity : AppCompatActivity() {
             finish()
             exitProcess(0)
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_main, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == R.id.exit)
+            finish()
+        return super.onOptionsItemSelected(item)
     }
 }
